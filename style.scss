@@ -1,0 +1,116 @@
+body {
+    background-color: white;
+    font-family: "Roboto Mono", monospace;
+}
+h1 {
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card-group {
+    display: flex;
+    flex-direction: row;
+
+    .card {
+        margin: auto;
+        margin-bottom: 20px;
+        justify-content: space-around;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo_site {
+        height: 8rem;
+        margin: 0;
+    }
+}
+.btn_Carrito {
+    background-color: #fa4444;
+}
+
+.btn-primary {
+    background-color: #81775c;
+    border: yellowgreen;
+    margin: 2px;
+    &:hover {
+        background-color: teal;
+    }
+}
+.cart-list {
+    li {
+        display: block;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px dotted;
+    }
+}
+.totalTxt {
+    float: right;
+}
+.currency {
+    &::before {
+        content: "$";
+    }
+}
+.footer_social_icons {
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        li {
+            a {
+                text-decoration: none;
+            }
+            i {
+                font-size: 30px;
+                padding: 40px 5px;
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.contacto_redes {
+    color: black;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+p.copyright {
+    text-align: center;
+    color: #000;
+}
+
+p.contacto {
+    font-size: 0.5rem;
+    text-align: right;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #5f9674;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+.subtotaTxt{
+    text-align: end;
+}
